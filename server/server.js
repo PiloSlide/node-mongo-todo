@@ -14,7 +14,7 @@ mongoose.connect("mongodb+srv://Jimmy:MongoDBpassword@cluster0.cjiax.mongodb.net
     useUnifiedTopology: true
 });
 
-const Task = require('./models/Todo');
+const Task = require('./models/todo');
 
 app.get('/getTasks', async (req, res) => {
     const tasks = await Task.find();
